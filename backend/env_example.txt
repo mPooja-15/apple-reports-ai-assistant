@@ -1,0 +1,35 @@
+# Apple Annual Reports QA System - Environment Configuration
+# Copy this file to .env and fill in your actual values
+
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_EMBEDDING_MODEL=text-embedding-ada-002
+OPENAI_LLM_MODEL=gpt-3.5-turbo
+OPENAI_TEMPERATURE=0.1
+OPENAI_MAX_TOKENS=500
+
+# Server Configuration
+HOST=0.0.0.0
+PORT=8000
+RELOAD=true
+LOG_LEVEL=info
+
+# CORS Configuration
+CORS_ORIGINS=["http://localhost:3000", "http://127.0.0.1:3000"]
+CORS_CREDENTIALS=true
+CORS_METHODS=["*"]
+CORS_HEADERS=["*"]
+
+# Data Processing Configuration
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+MAX_CHUNKS_PER_QUERY=5
+SIMILARITY_THRESHOLD=0.7
+
+# File Upload Configuration
+MAX_FILE_SIZE=52428800
+ALLOWED_FILE_TYPES=[".pdf"]
+UPLOAD_DIRECTORY=data
+
+# Vector Database Configuration
+VECTOR_DB_DIRECTORY=vector_db
